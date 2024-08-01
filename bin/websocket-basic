@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const WebSocketServerBasic = require("../lib/websocketserverbasic.js");
+
+let webSocketServerBasic = new WebSocketServerBasic({ printErrors: true });
+
+console.log("websocket server basic instantiation test");

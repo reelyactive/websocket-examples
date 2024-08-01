@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const WebSocketServerBasic = require("../lib/websocketserverbasic.js");
+
+const INTERVAL_MILLISECONDS = 5000;
+
+let webSocketServerBasic = new WebSocketServerBasic({ printErrors: true });
+
+setInterval(generateDynamb, INTERVAL_MILLISECONDS);
+
+console.log(
+  "websocket-server-basic with simulated data every",
+  INTERVAL_MILLISECONDS,
+  "ms"
+);
+
+function generateDynamb() {
+  let dynamb = {
+    deviceId: "fee150bada55",
+    deviceIdType: 3,
+    isContactDetected: [Math.random() < 0.1 ? false : true],
+    isMotionDetected: [Math.random() < 0.1 ? true : false],
+    timestamp: Date.now(),
+  };
+
+  webSocketServerBasic.handleEvent("dynamb", dynamb);
+}
