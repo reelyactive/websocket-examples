@@ -7,6 +7,10 @@ To run:
 - At the command line, run the command: `npm run simulator`
 - Connect to the websocket server with the following URL: `localhost:3001?token=your_access_token` (replace localhost if necessary, and replace `your_access_token` with the ACCESS_TOKEN found in the `.env` file.)
 
+Helpful links:
+https://ably.com/blog/websocket-authentication
+https://apidog.com/blog/test-postman-websockets-connection/
+
 ## Contributing
 
 Discover [how to contribute](CONTRIBUTING.md) to this open source project which upholds a standard [code of conduct](CODE_OF_CONDUCT.md).

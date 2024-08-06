@@ -5,11 +5,10 @@
     "name": "reelyActive",
     "email": "info@reelyactive.com"
   },
-  "description": "Mavin interface for barnacles.  We believe in an open Internet of Things.",
+  "description": "Examples for a websocket server to permit a websocket client to consume a stream of packets.  We believe in an open Internet of Things.",
   "keywords": [
     "reelyActive",
     "IoT",
-    "Mavin",
     "WebSocket"
   ],
   "version": "1.0.0",
@@ -23,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reelyactive/barnacles-mavin.git"
+    "url": "https://github.com/reelyactive/websocket-examples"
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
     "ws": "^8.17.1"
   },
   "bugs": {
-    "url": "https://github.com/reelyactive/barnacles-mavin/issues"
+    "url": "https://github.com/reelyactive/websocket-examples/issues"
   },
   "contributors": [
     {
