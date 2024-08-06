@@ -18,8 +18,8 @@ function generateDynamb() {
   let dynamb = {
     deviceId: "fee150bada55",
     deviceIdType: 3,
-    isContactDetected: [Math.random() < 0.1 ? false : true],
-    isMotionDetected: [Math.random() < 0.1 ? true : false],
+    isContactDetected: [Math.random() > 0.1],
+    isMotionDetected: [Math.random() > 0.1],
     timestamp: Date.now(),
   };
 
