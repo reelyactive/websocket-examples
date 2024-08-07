@@ -6,7 +6,7 @@ const INTERVAL_MILLISECONDS = 5000;
 
 let webSocketServerBasic = new WebSocketServerBasic({ printErrors: true });
 
-setInterval(generateDynamb, INTERVAL_MILLISECONDS);
+setInterval(generateMessageData, INTERVAL_MILLISECONDS);
 
 console.log(
   "websocket-server-example with simulated data every",
@@ -14,14 +14,12 @@ console.log(
   "ms"
 );
 
-function generateDynamb() {
-  let dynamb = {
-    deviceId: "fee150bada55",
-    deviceIdType: 3,
-    isContactDetected: [Math.random() > 0.1],
-    isMotionDetected: [Math.random() > 0.1],
-    timestamp: Date.now(),
+function generateMessageData() {
+  let example = {
+    data: {
+      timestamp: Date.now(),
+    },
   };
 
-  webSocketServerBasic.handleEvent("dynamb", dynamb);
+  webSocketServerBasic.handleEvent("example", example);
 }
