@@ -25,6 +25,7 @@
     "url": "https://github.com/reelyactive/websocket-examples"
   },
   "dependencies": {
+    "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "ws": "^8.17.1"
   },
