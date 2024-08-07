@@ -4,11 +4,26 @@ A basic websocket server implementation that demonstrates how to authenticate to
 
 To run:
 
+Initialize the npm node app.
+
+- At the command line, run the command: `npm install`.
 - At the command line, run the command: `npm run simulator`
 - Connect to the websocket server with the following URL: `localhost:3001?token=your_access_token` (replace localhost if necessary, and replace `your_access_token` with the ACCESS_TOKEN found in the `.env` file.)
 
+Adding a token for authentication
+
+- Rename or copy the `.env.example` file to `.env` and change the ACCESS_TOKEN value to the token value you would like to use.
+
+  Omitting this step will still allow the examples to run, but there will be no authentication.
+
 Helpful links:
 https://ably.com/blog/websocket-authentication
+
+### Connecting a websocket client
+
+#### Postman
+
+Postman can be used as a websocket client. There is a helpful post here on how to use Postman to test the websocket server.
 https://apidog.com/blog/test-postman-websockets-connection/
 
 ## Contributing
