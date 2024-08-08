@@ -21,6 +21,14 @@ https://ably.com/blog/websocket-authentication
 
 ### Connecting a websocket client
 
+#### Node
+
+After running the server, open a new terminal window and start the client with the following command: `npm run client`.
+
+You can choose to update the environment variables as needed.
+
+Messages will be exchanged between the server and the client, with the output being displayed in both of the terminals.
+
 #### Postman
 
 Postman can be used as a websocket client. There is a helpful post here on how to use Postman to test the websocket server.

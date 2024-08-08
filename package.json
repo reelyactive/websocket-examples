@@ -18,7 +18,8 @@
   "main": "./lib/websocketservicebasic.js",
   "scripts": {
     "start": "node bin/websocket-",
-    "simulator": "node --env-file=.env bin/websocket-dynamb-simulator"
+    "simulator": "node --env-file=.env bin/websocket-dynamb-simulator",
+    "client": "node --env-file=.env bin/websocket-client"
   },
   "repository": {
     "type": "git",

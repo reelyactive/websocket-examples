@@ -1,0 +1,5 @@
+const WebSocketClientExample = require("../lib/websocketclient.js");
+
+let webSocketClient = new WebSocketClientExample({ printErrors: true });
+
+console.log("websocket client example");
