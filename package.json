@@ -11,7 +11,7 @@
     "IoT",
     "WebSocket"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -26,9 +26,9 @@
     "url": "https://github.com/reelyactive/websocket-examples"
   },
   "dependencies": {
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "ws": "^8.17.1"
+    "ws": "^8.18.3"
   },
   "bugs": {
     "url": "https://github.com/reelyactive/websocket-examples/issues"
